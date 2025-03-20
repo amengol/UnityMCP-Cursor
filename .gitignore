@@ -6,6 +6,7 @@
 [Bb]uilds/
 [Ll]ogs/
 [Uu]ser[Ss]ettings/
+*.meta
 
 # Unity3D generated meta files
 *.pidb.meta
