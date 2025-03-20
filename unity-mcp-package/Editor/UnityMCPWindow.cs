@@ -41,16 +41,18 @@ namespace UnityMCP.Editor
 
                 EditorGUILayout.Space(10);
 
-                // Retry button - make it more prominent
+                // Retry button - make it more prominent and disable when connected
+                GUI.enabled = !UnityMCPConnection.IsConnected;
                 if (GUILayout.Button("Retry Connection", GUILayout.Height(30)))
                 {
                     UnityMCPConnection.RetryConnection();
                 }
+                GUI.enabled = true;
 
                 EditorGUILayout.Space(10);
 
                 // Last error message if any
-                if (!string.IsNullOrEmpty(UnityMCPConnection.LastErrorMessage))
+                if (!UnityMCPConnection.IsConnected && !string.IsNullOrEmpty(UnityMCPConnection.LastErrorMessage))
                 {
                     EditorGUILayout.LabelField("Last Error:", EditorStyles.boldLabel);
                     scrollPosition = EditorGUILayout.BeginScrollView(scrollPosition, EditorStyles.helpBox, GUILayout.ExpandHeight(true));

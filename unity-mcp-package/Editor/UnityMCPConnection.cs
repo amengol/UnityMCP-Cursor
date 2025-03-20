@@ -167,6 +167,7 @@ namespace UnityMCP.Editor
                 
                 await webSocket.ConnectAsync(serverUri, linkedCts.Token);
                 isConnected = true;
+                lastErrorMessage = "";
                 Debug.Log("[UnityMCP] Successfully connected to MCP Server");
                 StartReceiving();
                 StartSendingEditorState();
