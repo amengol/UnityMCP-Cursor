@@ -6,6 +6,8 @@
 
 Unity MCP for Cursor is a powerful Unity Editor integration that implements the Model Context Protocol (MCP), enabling seamless interaction between Unity and Cursor AI. It provides real-time editor state monitoring, remote command execution, and comprehensive logging capabilities.
 
+![Unity MCP in action](unity-mcp-cursor.gif)
+
 ## Architecture
 
 The project consists of two main components:
