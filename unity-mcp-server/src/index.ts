@@ -611,19 +611,16 @@ class UnityMCPServer {
   }
 
   async run() {
-    const transport = new StdioServerTransport();
-    await this.server.connect(transport);
-    console.error('Unity MCP server running on stdio');
-    
-    // Wait for WebSocket server to be ready
-    await new Promise<void>((resolve) => {
-      this.wsServer.once('listening', () => {
-        console.error('[Unity MCP] WebSocket server is ready on port 8080');
-        resolve();
-      });
-    });
+    // Start the MCP server with stdio transport for Cursor
+    const stdioTransport = new StdioServerTransport();
+    await this.server.connect(stdioTransport);
+    console.error('[Unity MCP] Server running on stdio');
   }
 }
 
+// Create and run the server
 const server = new UnityMCPServer();
-server.run().catch(console.error);
+server.run().catch((error) => {
+  console.error('[Unity MCP] Failed to start server:', error);
+  process.exit(1);
+});

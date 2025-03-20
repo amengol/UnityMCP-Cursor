@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "unity-mcp": {
+      "command": "node",
+      "args": ["D:/Unity/UnityMCP/unity-mcp-server/build/index.js"],
+      "env": {}
+    }
+  }
+} 
