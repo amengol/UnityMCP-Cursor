@@ -1,23 +1,26 @@
 {
-  "name": "com.claude.unity-mcp",
+  "name": "com.cursor.unity-mcp",
   "version": "1.0.0",
-  "displayName": "Unity MCP Integration",
-  "description": "Unity Editor integration with Claude AI via Model Context Protocol",
+  "displayName": "Unity MCP Integration for Cursor",
+  "description": "Unity Editor integration with Cursor AI via Model Context Protocol",
   "unity": "2020.3",
   "dependencies": {
     "com.unity.nuget.newtonsoft-json": "3.2.1"
   },
   "keywords": [
-    "claude",
+    "cursor",
     "ai",
     "mcp",
-    "editor"
+    "editor",
+    "claude"
   ],
   "author": {
-    "name": "Claude AI",
-    "email": "support@anthropic.com",
-    "url": "https://www.anthropic.com"
+    "name": "Cursor",
+    "url": "https://cursor.com"
   },
+  "documentationUrl": "https://github.com/amengol/UnityMCP-Cursor",
+  "changelogUrl": "https://github.com/amengol/UnityMCP-Cursor/blob/main/CHANGELOG.md",
+  "licensesUrl": "https://github.com/amengol/UnityMCP-Cursor/blob/main/LICENSE",
   "samples": [],
   "type": "tool",
   "hideInEditor": false
