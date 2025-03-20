@@ -10,7 +10,7 @@ Unity MCP for Cursor is a powerful Unity Editor integration that implements the 
 
 The project consists of two main components:
 
-### 1. Unity Package (UnityMCPPlugin)
+### 1. Unity Package (unity-mcp-package)
 
 A Unity Editor package that provides:
 - Debug window for connection status and monitoring
@@ -60,7 +60,7 @@ There are two ways to install the Unity MCP package:
 1. In Unity, open Window > Package Manager
 2. Click the "+" button in the top-left corner
 3. Select "Add package from git URL..."
-4. Enter the repository URL: `https://github.com/amengol/UnityMCP-Cursor.git?path=/UnityMCPPlugin`
+4. Enter the repository URL: `https://github.com/amengol/UnityMCP-Cursor.git?path=/unity-mcp-package`
 5. Click "Add"
 
 #### Option 2: Manual Installation
@@ -72,7 +72,7 @@ There are two ways to install the Unity MCP package:
 2. In Unity, open Window > Package Manager
 3. Click the "+" button in the top-left corner
 4. Select "Add package from disk..."
-5. Navigate to the cloned repository and select the `UnityMCPPlugin` folder
+5. Navigate to the cloned repository and select the `unity-mcp-package` folder
 6. Click "Open"
 
 ### MCP Server Setup

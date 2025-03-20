@@ -17,7 +17,7 @@ This Unity package enables seamless integration between Unity and Cursor AI via 
 1. In Unity, open Window > Package Manager
 2. Click the "+" button in the top-left corner
 3. Select "Add package from git URL..."
-4. Enter the repository URL: `https://github.com/amengol/UnityMCP-Cursor.git?path=/UnityMCPPlugin`
+4. Enter the repository URL: `https://github.com/amengol/UnityMCP-Cursor.git?path=/unity-mcp-package`
 5. Click "Add"
 
 ### Option 2: Manual Installation
@@ -29,7 +29,7 @@ This Unity package enables seamless integration between Unity and Cursor AI via 
 2. In Unity, open Window > Package Manager
 3. Click the "+" button in the top-left corner
 4. Select "Add package from disk..."
-5. Navigate to the cloned repository and select the `UnityMCPPlugin` folder
+5. Navigate to the cloned repository and select the `unity-mcp-package` folder
 6. Click "Open"
 
 ## Usage
